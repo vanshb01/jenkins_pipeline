@@ -9,7 +9,7 @@ pipeline {
         stage('CREDITS') { 
             steps { 
                echo 'CREDITS...' 
-               sh 'python3 vansh.py'
+               sh 'python vansh.py'
               //bat 'mvn package'
             }
         }
