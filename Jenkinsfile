@@ -1,20 +1,15 @@
 pipeline { 
     agent any  
     stages { 
-        stage('Devops') {
+        stage('COURSES') {
           steps {
-            echo 'credits - 4'
+            echo 'COURSES'
           }
         }
-        stage('SPM') {
-          steps {
-            echo 'credits-5'
-          }
-        }
-        stage('Communication') { 
+        stage('CREDITS') { 
             steps { 
-               echo 'credits-6' 
-               bat 'python vansh.py'
+               echo 'CREDITS...' 
+               sh 'python3 vansh.py'
               //bat 'mvn package'
             }
         }
